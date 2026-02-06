@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    padding-top: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 27rem;
+    max-width: 27rem;
+    min-height: 15rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card > div {
+    margin: 3rem 0 0 0;
+}
+
+h1 {
+    color: #e6005c;
+}
+
+button {
+    padding: 12px 26px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#yesBtn {
+    background: #28a745;
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#noBtn {
+    background: #dc3545;
+    color: white;
+    position: absolute;
+    animation:
+        spin 1.5s linear infinite,
+        shake 0.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 3px;
+    }
+    50% {
+        margin-left: -3px;
+    }
+    75% {
+        margin-left: 3px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+#result {
+    display: none;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card > img {
+    width: 13rem;
+    border-radius: 14px;
+}
+
+/* Confetti */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
