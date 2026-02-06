@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Bf ❤️ Gf</title>
+    </head>
+
+    <body>
+        <!-- 🎵 Romantic Background Music -->
+        <audio id="romanticMusic" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg" />
+        </audio>
+
+        <!-- 🎉 Celebration Music -->
+        <audio id="happyMusic">
+            <source src="https://www.bensound.com/bensound-music/bensound-happy.mp3" type="audio/mpeg" />
+        </audio>
+
+        <div class="card" id="proposal">
+            <h1><span class="bf">Bf</span> ❤️ <span class="gf">Gf</span></h1>
+            <p style="font-size: 1.2rem">Will you be my Valentine? 💞</p>
+
+            <div>
+                <button id="yesBtn" onpointerdown="sayYes()">YES 💖</button>
+                <button id="noBtn" onpointerenter="moveNo()" onpointerdown="moveNo()">NO 😜</button>
+            </div>
+        </div>
+
+        <div class="card" id="result">
+            <h1>Best Decision Ever 😜🎉</h1>
+            <img src="https://i.giphy.com/l0MYt5jPR6QX5pnqM.webp" />
+            <p>Happy Valentine’s Day, <span class="gf">Girlfriend</span> 💕</p>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
